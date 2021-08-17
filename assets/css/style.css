@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+article {
+  width: 25vw;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+input {
+  margin: 10px 0;
+}
+.line,
+.line1,
+.line2,
+.line3,
+.line4 {
+  background-color: rgb(210, 237, 246);
+  margin-bottom: 5px;
+}
+.bgc {
+  background-color: rgb(210, 237, 246);
+}
+form {
+  border-bottom: 1px solid black;
+}
+input[type="button"] {
+  width: 22vw;
+  margin: 2vh 1vw;
+  padding: 5px 0;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 20px;
+  background-color: rgb(60, 93, 136);
+  color: white;
+}
+input[type="number"] {
+  width: 6vw;
+  height: 2vw;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+div:not(.second) {
+  padding: 10px;
+}
+.line3,
+.line4 {
+}
+label {
+  padding: 5px;
+}
+span {
+  color: red;
+}
+h5 {
+  padding: 10px;
+  color: blue;
+}
+h4,
+h3 {
+  padding: 10px 0;
+}
+h3 {
+  color: rgb(2, 56, 92);
+}

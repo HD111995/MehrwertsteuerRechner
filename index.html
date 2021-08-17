@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MehrwertSteuer-Rechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <article>
+            <form action="">
+                <label for="">Was soll berechnet werden?</label>
+                <div class="line1">
+                    <input type="radio" name="mehr" id="brutto" checked>
+                    <label for="">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+                    <br>
+                    <input type="radio" name="mehr" id="netto" >
+                    <label for="">Mehrwertsteuer aufschlagen (Brutto zu Netto)</label>
+                </div>
+                
+                <div class="line2">
+                <label for="">Mehrwertsteuesatz</label><br>
+                <input type="radio" name="satz" id="nein" checked>
+                <label for="">19%</label>
+                <input type="radio" name="satz" id="seven">
+                <label for="">7%</label>
+                </div>
+                <div class="bgc">
+                    <label for="">Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</label><span>*</span>
+                    <input type="number" name="" id="betrag" required>
+                </div>
+                <div class="button">
+                    <input type="button" value="BERECHNEN" onclick="calc()">
+                </div>
+            </form>
+        
+        <div class="second">
+            <h5>Ergebnis</h5>
+            <div class="line3">
+                <h4>Mehrwertsteuerbetrag</h4>
+                <h3 id="msb">00,00 €</h3>
+            </div>
+            <div class="line4">
+                <h4 id="bn">Bruttobetrag(Endpreis)</h4>
+                <h3 id="bnb">00,00 €</h3>
+            </div>
+        </div>
+    </article>
+<script src="assets/js/main.js"></script>    
+</body>
+</html>
